@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const baseURL = 'https://api.github.com/'
 const headers = {
+  Accept: 'application/vnd.github.v3+json',
   'Content-Type': 'application/json; charset=utf-8'
 }
 
