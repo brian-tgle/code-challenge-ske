@@ -1,30 +1,30 @@
 {
   "files": {
+    "static/js/0.70a6dd1a.chunk.js": "/code-challenge-ske/static/js/0.70a6dd1a.chunk.js",
+    "static/js/0.70a6dd1a.chunk.js.map": "/code-challenge-ske/static/js/0.70a6dd1a.chunk.js.map",
+    "static/css/1.db0fe25e.chunk.css": "/code-challenge-ske/static/css/1.db0fe25e.chunk.css",
+    "static/js/1.db7f18d3.chunk.js": "/code-challenge-ske/static/js/1.db7f18d3.chunk.js",
+    "static/js/1.db7f18d3.chunk.js.map": "/code-challenge-ske/static/js/1.db7f18d3.chunk.js.map",
     "main.css": "/code-challenge-ske/static/css/main.92029058.chunk.css",
-    "main.js": "/code-challenge-ske/static/js/main.658e777e.chunk.js",
-    "main.js.map": "/code-challenge-ske/static/js/main.658e777e.chunk.js.map",
-    "runtime-main.js": "/code-challenge-ske/static/js/runtime-main.4b8d853f.js",
-    "runtime-main.js.map": "/code-challenge-ske/static/js/runtime-main.4b8d853f.js.map",
-    "static/js/2.947f63ac.chunk.js": "/code-challenge-ske/static/js/2.947f63ac.chunk.js",
-    "static/js/2.947f63ac.chunk.js.map": "/code-challenge-ske/static/js/2.947f63ac.chunk.js.map",
-    "static/js/3.629aef3c.chunk.js": "/code-challenge-ske/static/js/3.629aef3c.chunk.js",
-    "static/js/3.629aef3c.chunk.js.map": "/code-challenge-ske/static/js/3.629aef3c.chunk.js.map",
-    "static/css/4.db0fe25e.chunk.css": "/code-challenge-ske/static/css/4.db0fe25e.chunk.css",
-    "static/js/4.d71f73ea.chunk.js": "/code-challenge-ske/static/js/4.d71f73ea.chunk.js",
-    "static/js/4.d71f73ea.chunk.js.map": "/code-challenge-ske/static/js/4.d71f73ea.chunk.js.map",
+    "main.js": "/code-challenge-ske/static/js/main.3f9abbf4.chunk.js",
+    "main.js.map": "/code-challenge-ske/static/js/main.3f9abbf4.chunk.js.map",
+    "runtime-main.js": "/code-challenge-ske/static/js/runtime-main.695b3e6e.js",
+    "runtime-main.js.map": "/code-challenge-ske/static/js/runtime-main.695b3e6e.js.map",
+    "static/js/4.bd16164b.chunk.js": "/code-challenge-ske/static/js/4.bd16164b.chunk.js",
+    "static/js/4.bd16164b.chunk.js.map": "/code-challenge-ske/static/js/4.bd16164b.chunk.js.map",
     "static/js/5.39b78587.chunk.js": "/code-challenge-ske/static/js/5.39b78587.chunk.js",
     "static/js/5.39b78587.chunk.js.map": "/code-challenge-ske/static/js/5.39b78587.chunk.js.map",
     "static/js/6.63031a93.chunk.js": "/code-challenge-ske/static/js/6.63031a93.chunk.js",
     "static/js/6.63031a93.chunk.js.map": "/code-challenge-ske/static/js/6.63031a93.chunk.js.map",
     "index.html": "/code-challenge-ske/index.html",
-    "static/css/4.db0fe25e.chunk.css.map": "/code-challenge-ske/static/css/4.db0fe25e.chunk.css.map",
+    "static/css/1.db0fe25e.chunk.css.map": "/code-challenge-ske/static/css/1.db0fe25e.chunk.css.map",
     "static/css/main.92029058.chunk.css.map": "/code-challenge-ske/static/css/main.92029058.chunk.css.map",
-    "static/js/3.629aef3c.chunk.js.LICENSE.txt": "/code-challenge-ske/static/js/3.629aef3c.chunk.js.LICENSE.txt"
+    "static/js/4.bd16164b.chunk.js.LICENSE.txt": "/code-challenge-ske/static/js/4.bd16164b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4b8d853f.js",
-    "static/js/3.629aef3c.chunk.js",
+    "static/js/runtime-main.695b3e6e.js",
+    "static/js/4.bd16164b.chunk.js",
     "static/css/main.92029058.chunk.css",
-    "static/js/main.658e777e.chunk.js"
+    "static/js/main.3f9abbf4.chunk.js"
   ]
 }
