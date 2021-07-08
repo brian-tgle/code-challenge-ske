@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Screenshot](https://user-images.githubusercontent.com/84697800/124912733-7f080100-e018-11eb-8a7a-9cd69ab08229.png)
 
+## Live demo
+[Click here](https://brian-tgle.github.io/code-challenge-ske)
+
 ## Features
 - Github API - Search User by keyword
 - Union all overlapping items
