@@ -1,21 +1,23 @@
 import { useEffect, useState, ChangeEvent } from 'react'
+import LazyImage from 'components/lazyImage'
 import TableLoading from 'components/loading/tableLoading'
 import useDebounce from 'hooks/useDebounce'
 import UserRepository from 'services/userRepository'
 import { AnyObject, UserItem, UserListResponse } from 'intefaces'
 import { API_DEFAULT_PARAMS, DEBOUNCE_TIME, IMAGE_PLACEHOLDER, MINIMUN_SEARCH_KEY } from '../constants'
-import LazyImage from 'components/lazyImage'
 
 const ChallengeOne = () => {
   const { PER_PAGE, PAGE } = API_DEFAULT_PARAMS
   const [loading, setLoading] = useState(false)
   const [users, setUsers] = useState<Array<UserItem>>([])
+  const [totalCount, setTotalCount] = useState<number>(0)
   const [searchString, setSearchString] = useState('')
   const debouncedSearchString: string = useDebounce(searchString, DEBOUNCE_TIME)
-  const fetchUser = (action: Function): void => {
+  const fetchUser = (): void => {
     setLoading(true)
     UserRepository.getAll(debouncedSearchString, PER_PAGE, PAGE).then((data: UserListResponse) => {
-      action(data?.items)
+      setUsers(data?.items)
+      setTotalCount(data?.total_count)
     }).catch((error: AnyObject) => {
       console.log(error)
     }).finally(() => {
@@ -25,7 +27,7 @@ const ChallengeOne = () => {
 
   useEffect(() => {
     if (debouncedSearchString.length >= MINIMUN_SEARCH_KEY) {
-      fetchUser(setUsers)
+      fetchUser()
     } else if (!debouncedSearchString.length) {
       setUsers([])
     }
@@ -41,9 +43,10 @@ const ChallengeOne = () => {
         <span className="card__header">
           Search by name:
           <input className="input" type="text" name="search" placeholder="Input value..." onChange={handleChange} />
+          {totalCount ? <b>Total count: {totalCount}</b> : <></>}
         </span>
-        <div className="card__body">
-          <table className="table table--scroll">
+        <div className="card__body card__body--scroll">
+          <table className="table">
               <thead>
                 <tr>
                   <th>Image</th>
