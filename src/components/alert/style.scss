@@ -1,0 +1,28 @@
+@import 'styles/colors';
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: .3rem;
+  position: fixed;
+  right: 1rem;
+  
+  color: $white;
+  animation: fadeIn 2s;
+  &--bottom {
+    bottom: 2rem;
+  }
+  &--top {
+    top: 4rem;
+  }
+  &--error {
+    background-color: $red;
+  }
+  &--success {
+    background-color: $nav-bg;
+  }
+}

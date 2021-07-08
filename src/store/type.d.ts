@@ -1,4 +1,5 @@
 export type ApplicationStates = {
-  totalPage: Number;
-  currentItemIndex: number;
+  showAlert: boolean;
+  alertType: string;
+  alertMessage: string;
 }
