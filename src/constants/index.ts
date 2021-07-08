@@ -5,6 +5,15 @@ export const API_DEFAULT_PARAMS = {
   PAGE: 1
 }
 
+export const ALERT_TYPES = {
+  SUCCESS: 'success',
+  ERROR: 'error'
+}
+
+export const ALERT_TIME = 4000
+
+export const DEFAULT_ALERT_POSITION = 'bottom'
+
 export const DEBOUNCE_TIME = 500
 
 export const MINIMUN_SEARCH_KEY = 3

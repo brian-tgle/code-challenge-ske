@@ -6,17 +6,15 @@ export const APPLICATION_STORE = 'ApplicationStore'
 type StoreApi = StoreActionApi<ApplicationStates>;
 
 export const actions = {
-  onLoadTotalPage: (totalPage: number) => ({ setState }: StoreApi) => {
-    setState({ totalPage })
-  },
-  onChangeItemIndex: (currentItemIndex: number) => ({ setState }: StoreApi) => {
-    setState({ currentItemIndex })
+  onChangeShowAlert: (showAlertPayload: ApplicationStates) => ({ setState }: StoreApi) => {
+    setState(showAlertPayload)
   }
 }
 
 export const initialState: ApplicationStates = {
-  totalPage: 0,
-  currentItemIndex: 0
+  showAlert: false,
+  alertMessage: '',
+  alertType: ''
 }
 
 type Actions = typeof actions;
