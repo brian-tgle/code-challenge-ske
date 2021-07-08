@@ -35,3 +35,9 @@ export interface UnavailableItems {
   startPx: number;
   endPx: number;
 }
+
+export interface AlertProps {
+  type: string;
+  message: string;
+  position?: string;
+}
