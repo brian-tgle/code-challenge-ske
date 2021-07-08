@@ -30,6 +30,7 @@ const ChallengeOne = () => {
       fetchUser()
     } else if (!debouncedSearchString.length) {
       setUsers([])
+      setTotalCount(0)
     }
   }, [debouncedSearchString])
 
