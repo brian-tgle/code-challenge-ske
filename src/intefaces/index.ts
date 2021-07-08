@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export type FnType = (param?: object) => void
 
 export interface AnyObject {
@@ -15,7 +16,6 @@ export interface LazyImageProps {
 
 export interface UserItem {
   id: string;
-  // eslint-disable-next-line camelcase
   avatar_url: string;
   login: string;
   type: string;
@@ -24,8 +24,14 @@ export interface UserItem {
 
 export interface UserListResponse {
   items: UserItem[];
+  total_count: number;
 }
 
 export interface TableLoadingProps {
   colSpan: number;
+}
+
+export interface UnavailableItems {
+  startPx: number;
+  endPx: number;
 }

@@ -44,13 +44,13 @@ body {
 .table {
   border-collapse: collapse;
   width: 100%;
+  tbody {
+    height: 500px;
+    overflow: auto;
+  }
   td, th {
     border: 1px solid $black;
     padding: .5rem;
-  }
-  &--scroll {
-    max-height: 500px;
-    overflow: auto;
   }
 }
 
@@ -58,6 +58,12 @@ body {
   width: 30rem;
   height: 2rem;
   padding: .3rem;
+  border-radius: .3rem;
+  border-color: $black;
+}
+
+.textarea {
+  width: 100%;
   border-radius: .3rem;
   border-color: $black;
 }
