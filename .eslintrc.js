@@ -21,6 +21,8 @@ module.exports = {
   ],
   rules: {
     'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
+    'max-len': ['error', { code: 120, ignoreComments: true }],
+    'react/prop-types': 'off'
   }
 }

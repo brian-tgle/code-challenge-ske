@@ -1,6 +1,6 @@
 import Repository from './repository'
 
-const url = 'user'
+const url = 'search/users'
 
 const UserRepository = {
   /**
@@ -10,8 +10,8 @@ const UserRepository = {
    * @param {skip} skip the number of skip items
    * @return {Array} the list of user
    */
-  getAll: (limit: number, page: number, skip: number): any =>
-    Repository.get(`${url}?limmit=${limit}&page=${page}&skip=${skip}`)
+  getAll: (searchString: string, perPage: number, page: number): any =>
+    Repository.get(`${url}?q=${searchString}&per_page=${perPage}&page=${page}`)
 }
 
 export default UserRepository

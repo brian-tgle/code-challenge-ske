@@ -1,17 +1,17 @@
-import './App.css'
+import { Suspense } from 'react'
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 import Loading from 'components/loading'
 import NotFound from 'pages/notFound'
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import { Suspense } from 'react'
 import routeList from 'routes'
+import 'styles/common.scss'
 
 const App = () => {
   return (
     <div className="app">
       <Router>
         <header className="app-header">
-          <nav>
-            <ul className="nav">
+          <nav className="nav">
+            <ul className="inline-list">
               <li className="item">
                 <Link to="/">Challenge One</Link>
               </li>
@@ -19,6 +19,7 @@ const App = () => {
                 <Link to="/challenge-two">Challenge Two</Link>
               </li>
             </ul>
+            <span className="float-right">Le Cong Thang</span>
           </nav>
         </header>
         <main>
